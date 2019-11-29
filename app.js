@@ -176,6 +176,8 @@ function file(path) {
 		return file_code(path);
 	}
 	if ("|mp4|".indexOf(`|${ext}|`) >= 0) {
+		document.write('<link rel="stylesheet" href="//vjs.zencdn.net/7.5.5/video-js.css">');
+		document.write('<link rel="stylesheet" href="//vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js">');
 		return file_video(path);
 	}
 	if ("|bmp|jpg|jpeg|png|gif|".indexOf(`|${ext}|`) >= 0) {
@@ -263,8 +265,6 @@ function file_video(path) {
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 <script src="//vjs.zencdn.net/7.5.5/video.js"></script>
 	`;
-	document.write('<link rel="stylesheet" href="//vjs.zencdn.net/7.5.5/video-js.css">');
-	document.write('<link rel="stylesheet" href="//vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js">');
 	$('#content').html(content);
 }
 //

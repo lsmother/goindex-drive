@@ -1,4 +1,4 @@
-// Edited by KuloKenci
+// Edited by Kulo Kenci
 // Head
 document.write('<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">');
 document.write('<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/kulokenci/goindex-drive@2.0/custom.css">');
